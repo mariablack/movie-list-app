@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: react-tailwind-app
+    ports:
+      - "8080:80"
+    # For development, you can use this setup instead:
+    # build:
+    #   context: .
+    #   target: build
+    # volumes:
+    #   - ./src:/app/src
+    # command: npm run dev -- --host 0.0.0.0
+    # ports:
+    #   - "5173:5173"
